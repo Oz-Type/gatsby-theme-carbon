@@ -85,7 +85,7 @@ export const SwitcherLink = ({
 // Note: if you change this, update the max-height in the switcher stylesheet
 const DefaultChildren = () => (
   <>
-    <SwitcherDivider>Foundations</SwitcherDivider>
+    <SwitcherDivider>Information</SwitcherDivider>
     <SwitcherLink href="https://ibm.com/brand" isInternal>
       IBM Brand Center
     </SwitcherLink>
