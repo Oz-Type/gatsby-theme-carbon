@@ -5,58 +5,38 @@ import { calloutLink } from './Homepage.module.scss';
 
 import Carbon from './carbon.jpg';
 
-const FirstLeftText = () => <p>Callout component</p>;
+const FirstLeftText = () => (
+  <p>
+    Think → <em>Guide</em>
+  </p>
+);
 
 const FirstRightText = () => (
   <p>
-    This is a callout component. You can edit the contents by updating the{' '}
-    <a href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/5fe12de31bb19fbfa2cab7c69cd942f55aa06f79/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      pre-shadowed homepage template
-    </a>
-    . You can also provide <code>color</code> and <code>backgroundColor</code>{' '}
-    props to suit your theme.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
+    Build Bonds
+    <br />
+    This is the guiding ethos behind IBM’s design philosophy and principles.
+    This helps us distinguish every element and every experience Designed&nbsp;by&nbsp;IBM.
+    <span style={{ paddingTop: "1.25rem", display : "flex" }}>↓</span>
   </p>
 );
-
-const SecondLeftText = () => <p>Callout component</p>;
-
-const SecondRightText = () => (
-  <p>
-    You can also not use these components at all by not providing the callout
-    props to the template or writing your own template.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
-  </p>
-);
-
-const BannerText = () => <h1>Carbon Gatsby theme</h1>;
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
+  Banner: (
+    <HomepageVideo
+      src="videos/hero-video-min.mp4"
+      poster="images/hero-video-poster.jpg"
+    />
+  ),
   FirstCallout: (
     <HomepageCallout
-      backgroundColor="#030303"
-      color="white"
+      backgroundColor={gray10}
+      color={"#191919"}
       leftText={FirstLeftText}
       rightText={FirstRightText}
     />
   ),
-  SecondCallout: (
-    <HomepageCallout
-      leftText={SecondLeftText}
-      rightText={SecondRightText}
-      color="white"
-      backgroundColor="#061f80"
-    />
-  ),
+  SecondCallout: null,
 };
 
 // spreading the original props gives us props.children (mdx content)
