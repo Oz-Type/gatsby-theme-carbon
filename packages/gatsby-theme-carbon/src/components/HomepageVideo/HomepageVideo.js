@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import { settings } from 'carbon-components';
+
 import { breakpoints } from '@carbon/layout/es';
 import { ArrowRight } from '@carbon/icons-react';
 import VideoInternal from '../VideoInternal';
