@@ -60,8 +60,11 @@ const customProps = {
 };
 
 
-// spreading the original props gives us props.children (mdx content)	// spreading the original props gives us props.children (mdx content)
-function ShadowedHomepage(props) {	function ShadowedHomepage(props) {
-  return <HomepageTemplate {...props} {...customProps} />;	  return <HomepageTemplate {...props} {...customProps} />;
-}	}
-export default ShadowedHomepage;	export default ShadowedHomepage;
+
+
+
+// spreading the original props gives us props.children (mdx content)
+function ShadowedHomepage(props) {
+  return <HomepageTemplate {...props} {...customProps} />;
+}
+export default ShadowedHomepage;
