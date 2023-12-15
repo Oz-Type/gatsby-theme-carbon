@@ -23,7 +23,7 @@ const FirstRightText = () => (
 
 const customProps = {
   Banner: (
-    <HomepageVideo
+    <Video
       src="videos/hero-video-min.mp4"
       poster="images/hero-video-poster.jpg"
     />
