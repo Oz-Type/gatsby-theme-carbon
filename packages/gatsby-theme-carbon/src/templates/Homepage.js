@@ -5,7 +5,7 @@ import useMetadata from '../util/hooks/useMetadata';
 import Utils from '../components/Utils';
 import { HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-import HomepageVideo from '../../components/HomepageVideo';
+import HomepageVideo from '../components/HomepageVideo';
 import NextPrevious from '../components/NextPrevious';
 import { gray10 } from '@carbon/colors';
 
