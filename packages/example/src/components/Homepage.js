@@ -5,43 +5,65 @@ import { calloutLink } from './Homepage.module.scss';
 
 import Carbon from './carbon.jpg';
 
-const FirstLeftText = () => (
-  <p>
-    Think → <em>Guide</em>
-  </p>
-);
+import Carbon from './carbon.jpg';
+
+const FirstLeftText = () => <p>Callout component</p>;
 
 const FirstRightText = () => (
   <p>
-    Build Bonds
-    <br />
-    This is the guiding ethos behind IBM’s design philosophy and principles.
-    This helps us distinguish every element and every experience Designed&nbsp;by&nbsp;IBM.
-    <span style={{ paddingTop: "1.25rem", display : "flex" }}>↓</span>
+    This is a callout component. You can edit the contents by updating the{' '}
+    <a href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/5fe12de31bb19fbfa2cab7c69cd942f55aa06f79/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
+      pre-shadowed homepage template
+    </a>
+    . You can also provide <code>color</code> and <code>backgroundColor</code>{' '}
+    props to suit your theme.
+    <a
+      className={calloutLink}
+      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
+      Homepage source →
+    </a>
   </p>
 );
 
+const SecondLeftText = () => <p>Callout component</p>;
+
+const SecondRightText = () => (
+  <p>
+    You can also not use these components at all by not providing the callout
+    props to the template or writing your own template.
+    <a
+      className={calloutLink}
+      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
+      Homepage source →
+    </a>
+  </p>
+);
+
+const BannerText = () => <h1>Carbon Gatsby theme</h1>;
+
 const customProps = {
-  Banner: (
-    <Video
-      src="videos/hero-video-min.mp4"
-      poster="images/hero-video-poster.jpg"
-    />
-  ),
+  Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
   FirstCallout: (
     <HomepageCallout
-      backgroundColor={gray10}
-      color={"#191919"}
+      backgroundColor="#030303"
+      color="white"
       leftText={FirstLeftText}
       rightText={FirstRightText}
     />
   ),
-  SecondCallout: null,
+  SecondCallout: (
+    <HomepageCallout
+      leftText={SecondLeftText}
+      rightText={SecondRightText}
+      color="white"
+      backgroundColor="#061f80"
+    />
+  ),
 };
 
-// spreading the original props gives us props.children (mdx content)
-function ShadowedHomepage(props) {
-  return <HomepageTemplate {...props} {...customProps} />;
-}
 
-export default ShadowedHomepage;
+// spreading the original props gives us props.children (mdx content)	// spreading the original props gives us props.children (mdx content)
+function ShadowedHomepage(props) {	function ShadowedHomepage(props) {
+  return <HomepageTemplate {...props} {...customProps} />;	  return <HomepageTemplate {...props} {...customProps} />;
+}	}
+export default ShadowedHomepage;	export default ShadowedHomepage;
