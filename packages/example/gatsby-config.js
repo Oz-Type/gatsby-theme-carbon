@@ -16,6 +16,7 @@ module.exports = {
         display: 'browser',
       },
     },
+    plugins: [ { resolve: 'gatsby-theme-carbon', options: { navigationStyle: 'header', }, }, ],
     {
       resolve: 'gatsby-theme-carbon',
       options: {
