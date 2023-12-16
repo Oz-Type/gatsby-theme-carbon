@@ -16,7 +16,6 @@ module.exports = {
         display: 'browser',
       },
     },
-    plugins: [ { resolve: 'gatsby-theme-carbon', options: { navigationStyle: 'header', }, }, ],
     {
       resolve: 'gatsby-theme-carbon',
       options: {
@@ -26,6 +25,8 @@ module.exports = {
             'https://github.com/carbon-design-system/gatsby-theme-carbon',
           subDirectory: '/packages/example',
         },
+        // Add the navigationStyle option here
+        navigationStyle: 'header',
       },
     },
   ],
