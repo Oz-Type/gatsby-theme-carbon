@@ -40,6 +40,9 @@
 // Overrides upstream Carbon styles for header nav
 .headerWithHeaderNav :global(.cds--header__menu-item) {
   font-size: 1rem;
+  background-color: $gray-100;
+  border: 1px solid $gray-80;
+  color: $white-0;
 }
 
 // Overrides upstream Carbon styles for left nav in mobile.
