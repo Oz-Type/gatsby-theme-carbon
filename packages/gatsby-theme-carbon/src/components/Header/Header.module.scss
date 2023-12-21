@@ -197,31 +197,31 @@ header.header {
 }
 // Add the new styles here
 :global(.cds--header__menu-title[aria-expanded=true]+.cds--header__menu .cds--header__menu-item) {
-  background-color: #262626;
-  color: #fff;
+  background-color: #262626 !important;
+  color: #fff !important;
 }
 
 :global(.cds--header__menu-title[aria-expanded=true]) {
-  background-color: #262626;
-  color: #ffffff;
+  background-color: #262626 !important;
+  color: #ffffff !important;
   z-index: 8002;
 }
 
 :global(.cds--header__menu-title[aria-expanded=true]+.cds--header__menu .cds--header__menu-item.cds--header__menu-item--current) {
-  background-color: #393939;
+  background-color: #393939 !important;
 }
 
 :global(.cds--header__menu-title[aria-expanded=true]+.cds--header__menu .cds--header__menu-item.cds--header__menu-item--current:hover) {
-  background-color: #393939;
-  color: white;
+  background-color: #393939 !important;
+  color: white !important;
 }
 
 :global(.cds--header__menu-title[aria-expanded=true]+.cds--header__menu .cds--header__menu-item:hover) {
-  background-color: #393939;
-  color: #ffffff;
+  background-color: #393939 !important;
+  color: #ffffff !important;
 }
 
 :global(.cds--header__menu-title[aria-expanded=true]+.cds--header__menu .cds--header__menu-item:active) {
-  background-color: #393939;
-  color: white;
+  background-color: #393939 !important;
+  color: white !important;
 }
