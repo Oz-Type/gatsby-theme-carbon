@@ -225,3 +225,10 @@ header.header {
   background-color: #393939 !important;
   color: white !important;
 }
+:global(.cds--header__menu-arrow) {
+  fill: #ffffff !important;
+}
+
+:global(a.cds--header__menu-item:active>svg, a.cds--header__menu-item:hover>svg) {
+  fill: #ffffff !important;
+}
